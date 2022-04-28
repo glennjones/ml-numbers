@@ -19,3 +19,12 @@ This node.js  project can be installed locally by clone it.
 ```
 
 ## About
+
+
+
+## Rebuild dist directory and Github pages file
+
+```bash
+> npm run build
+```
+It will take a few seconds as it run the training before exporting the data.
