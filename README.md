@@ -2,7 +2,7 @@
 
 A demo that use Tensorflow.js to recognize handwritten numbers in the browser with just javascript. You draw the number a canvas the reat is magic (if it works).
 
-Try the demo 
+Try the demo https://glennjones.github.io/ml-numbers/
 
 ![Demo interface](public/images/i-think.png)
 
