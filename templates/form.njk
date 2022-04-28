@@ -1,0 +1,25 @@
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+    <h1>Number recognition (Node.js)</h1>
+    <p>Machine learning example. Uses logistic regression to recognitise hand drawn single digit number. It was trained on the mnist dataset and built  with javascript and Tensorflow.js.</p>
+
+    {% if testNumber %}
+
+        <div>mnist test image number: {{testNumber}}<div>
+        <div>Label: {{label}}<div>
+        <div><strong>Perdiction: {{prediction}}</strong><div></br>
+
+        <img src="./v1/tests/{{testNumber}}/image" width="140" height="140"/>
+        <img src="./v1/tests/{{testNumber}}/image?invert=true" width="140" height="140"/>
+
+    {% endif %}
+
+    <form action="/server">
+        <label for="test-number">Pick a test iamge from 1 to 20,000.</label> 
+        <input name="test-number" type="number" min="1" max="20000" required="required" value="{{testNumber}}"> 
+        <input type="submit" value="Submit">
+    <form>
+
+
+{% endblock %}

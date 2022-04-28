@@ -1,0 +1,126 @@
+body {
+  padding: 2em;
+  margin: 0;
+  font: 14px/1.5 Lato, 'Source Sans Pro', sans-serif;
+  color: #333;
+  font-weight: 300;
+  font-size: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  margin: 0 0 0.4em;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: normal;
+}
+
+
+h1 {
+  font-weight: 300;
+  font-size: 3.4em;
+  margin-bottom: 0.6em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+a {
+  color: #39c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#about, #about div {
+  margin: 2em 0;
+}
+
+
+canvas {
+  border: 1px solid #333;
+}
+
+#result {
+  width: 280px;
+  border: 1px solid #333;
+  background-color: #333;
+  padding-bottom: 0.2em;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+#buttons {
+  width: 280px;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+  display: none;
+}
+
+.button {
+  font-size: 1em;
+  border: 1px solid #333;
+  background: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.button span {
+  display: inline-block;
+}
+
+
+button.icon-button {
+  background: #fff;
+  color: inherit;
+  border: none;
+  border-radius: 0.3em;
+  padding: none;
+  transition: all 0.2s linear;
+  display: inline-block;
+  align-items: center;
+}
+
+button.icon-button svg {
+
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  fill: #666;
+  transition: all 0.2s linear;
+
+}
+
+button.icon-button:focus {
+
+  outline: none;
+
+}
+
+button.icon-button:hover svg {
+
+  fill: #000;
+}
+
+#totals {
+  display: block;
+  width: 280px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+body {
+  font-weight: 500;
+}

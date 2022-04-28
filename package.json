@@ -1,0 +1,49 @@
+{
+  "name": "ml-numbers",
+  "author": "Glenn Jones",
+  "version": "1.0.0",
+  "description": "A demo of ML to recognize handwritten numbers. Its uses linear regression built with Tensorflow.js trained on the MNIST database.",
+  "keywords": [
+    "tensorflow",
+    "linear regression",
+    "mnist"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/glennjones/ml-numbers.git"
+  },
+  "main": "index",
+  "scripts": {
+    "dev-debug": "node --inspect-brk=9229 ./lib/app.js",
+    "dev": "nodemon",
+    "start": "node ./lib/app.js"
+  },
+  "dependencies": {
+    "@hapi/boom": "^9.1.4",
+    "@hapi/h2o2": "^9.1.0",
+    "@hapi/hapi": "^20.2.1",
+    "@hapi/hoek": "^9.2.1",
+    "@hapi/inert": "^6.0.5",
+    "@hapi/vision": "6.1.0",
+    "@tensorflow/tfjs-node": "^3.15.0",
+    "blipp": "^4.0.2",
+    "dotenv": "^16.0.0",
+    "handlebars": "4.7.7",
+    "hapi-swagger": "^14.2.5",
+    "jimp": "^0.16.1",
+    "joi": "^17.6.0",
+    "lodash": "^4.17.21",
+    "mnist-data": "^1.2.6",
+    "node-remote-plot": "^1.2.0",
+    "nunjucks": "^3.2.3",
+    "sharp": "^0.30.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": ">= 16.0"
+  }
+}
