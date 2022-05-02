@@ -12,7 +12,7 @@ function init() {
 	const penColor = 'rgb(0,0,0)';
 	const penbBackgroundColor = 'rgb(255, 255, 255)';
 	const blurAmount = 3;
-	const msWaitForWritting = 2000;
+	const msWaitForWritting = 1500;
 	const debug = false;
 
 
@@ -21,6 +21,7 @@ function init() {
 	let storeDigit = [];
 	let correctPredictions = 0;
 	let wrongPredictions = 0;
+	let timeoutID;
 
 
 	/* DOM */
@@ -41,15 +42,7 @@ function init() {
 
 	signaturePad.addEventListener("endStroke", () => {
 		storeDigit = signaturePad.toData();
-	});
 
-	var timeoutID;
-	signaturePad.addEventListener("beginStroke", () => {
-		resultElt.innerHTML = `I am thinking`;
-
-		if (timeoutID) {
-			clearTimeout(timeoutID);
-		}
 		timeoutID = setTimeout(() => {
 			getPrediction()
 				.then(function (prediction) {
@@ -60,6 +53,15 @@ function init() {
 					}
 				})
 		}, msWaitForWritting)
+	});
+
+	
+	signaturePad.addEventListener("beginStroke", () => {
+		resultElt.innerHTML = `I am thinking`;
+
+		if (timeoutID) {
+			clearTimeout(timeoutID);
+		}
 	});
 
 
