@@ -124,3 +124,7 @@ button.icon-button:hover svg {
 body {
   font-weight: 500;
 }
+
+#about {
+  max-width: 200em;
+}
