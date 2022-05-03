@@ -33,7 +33,7 @@ with Javascript</a> course. The model was trained with the mnist dataset using
 When tested against the <a href="https://en.wikipedia.org/wiki/MNIST_database">mnist 
 dataset</a> it has an error rate of 7.48%. The html canvas drawing surface does not provide images with 
 the same characteristics as hand drawn digits on paper, so the browser demo's error rate is 
-a lot higher. The lesson I learned here, is that inputs for training have to the be the same 
+a lot higher. The lesson I learned here, is that inputs for training have to the be exactly the same 
 as your observations for predictions. That the complexity is sometimes more in the preprocessing 
 and standardisation of data.
   
