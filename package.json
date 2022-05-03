@@ -18,7 +18,8 @@
     "dev-debug": "node --inspect-brk=9229 ./lib/app.js",
     "dev": "nodemon",
     "start": "node ./lib/app.js",
-    "build": "node ./lib/build.js"
+    "build": "node ./lib/build.js",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@hapi/boom": "^9.1.4",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "eslint": "^8.14.0",
+    "husky": "^7.0.0",
     "nodemon": "^2.0.15"
   },
   "engines": {
